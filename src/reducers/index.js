@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import randomPetsReducer from './randomPetsReducer'
+import  randomPet  from './randomPetsReducer'
 
 const rootReducer = combineReducers({
-  randomPetsReducer
+  randomPet
 })
 
 export default rootReducer
