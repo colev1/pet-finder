@@ -1,10 +1,10 @@
-const randomPetsReducer = (state=[], action) => {
+const randomPet = (state={}, action) => {
   switch(action.type) {
-    case 'FETCH_RANDOM_PETS':
-      return action
+    case 'ADD_RANDOM_PET':
+      return action.pet
     default:
       return state
   }
 }
 
-export default randomPetsReducer;
+export default randomPet;
