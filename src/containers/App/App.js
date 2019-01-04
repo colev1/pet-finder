@@ -28,13 +28,15 @@ class App extends Component {
         </header>
         <nav className="nav-bar">
         
-          <NavLink to='/profile' className ='nav'> <i class="fas fa-paw"></i> </NavLink>
+          <NavLink to='/profile' className ='nav profile'> <i class="fas fa-paw"></i> Create a Custom Profile </NavLink>
         
-          <NavLink to='/breeds' className ='nav'> breeds </NavLink>
-          <NavLink to='/shelters' className ='nav'> shelters </NavLink>
+          <NavLink to='/breeds' className ='nav'> search by breed </NavLink>
+          <NavLink to='/shelters' className ='nav'> search by shelter </NavLink>
         </nav>
+        <main className='main-container'>
           <Route exact path='/' component={Home} />
           <Route path='/profile' component={Form} />
+        </main>
       </div>
     );
   }

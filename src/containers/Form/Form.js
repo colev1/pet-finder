@@ -12,9 +12,9 @@ class Form extends Component {
   }
   render() {
     return (
-      <div>
-        yo
-      </div>
+      <form>
+        <input type="checkbox" name="dog" value="Dog" /> 
+      </form>
     )
   }
 }

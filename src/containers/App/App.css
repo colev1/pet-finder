@@ -10,10 +10,11 @@
 
 body {
   margin: 0;
+  background-color: #EF7F74;
 }
 
 .nav-bar {
-  padding-left: 40%;
+  /* padding-left: 40%; */
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -26,7 +27,15 @@ body {
   color: black;
 }
 
+.profile {
+  margin-right: 30%;
+}
+
 .nav {
   color: black;
   text-decoration: none;
+}
+
+.main-container {
+  overflow: scroll;
 }
