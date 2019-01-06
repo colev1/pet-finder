@@ -7,6 +7,7 @@ import { connect } from 'react-redux'
 // import PropTypes from 'prop-types'  
 import {fetchRandomPet} from '../../thunks/fetchRandomPet'
 import Form from '../Form/Form.js'
+import PetDisplay from '../petDisplay/petDisplay.js'
 
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
         <main className='main-container'>
           <Route exact path='/' component={Home} />
           <Route path='/profile' component={Form} />
+          <Route path='/breeds' component={PetDisplay} />
         </main>
       </div>
     );

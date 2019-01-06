@@ -2,7 +2,7 @@ import { addRandomPet } from '../actions/addRandomPet'
 import cleanPet from '../helpers/helper'
 
 export const fetchRandomPet = (url) => {
-  const cors = 'https://cors-anywhere.herokuapp.com/';
+  // const cors = 'https://cors-anywhere.herokuapp.com/';
   return async(dispatch) => {
     try {
       const response = await fetch(url)
