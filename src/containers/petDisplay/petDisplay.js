@@ -18,12 +18,6 @@ class PetDisplay extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   console.log('yo')
-  //   const url = 'http://api.petfinder.com/pet.find?key=971b0fa2a8b9c9da1bb222d181ecfd6c&format=json&location=80202'
-  //   // this.props.fetchSearchedPets(url)
-  // }
-
   handleSubmit = (e) => {
     e.preventDefault()
     const searchUrl = cleanSearchUrl(this.state)
@@ -40,10 +34,22 @@ class PetDisplay extends Component {
 
   render() {
     const pets = this.props.searchedPets.map(pet => {
-     const newpet = 
-      <div className='pet-card'> 
-       <h1> {pet.name} </h1>
-       <p> {pet.animal} </p>
+     const img = pet.photos[2];
+     const img2 = pet.photos[7];
+      const newpet = 
+      <div className='pet-card' key={pet.id}> 
+     
+       <div> 
+          <h1> {pet.name} </h1>
+          <p className='animal-type'> {pet.animal} . {pet.breed} </p>
+       </div>
+       <img src={img}/>
+       {/* <img src={img2}/> */}
+       <div className='pet-description'>
+         age: {pet.age} <br/>
+         size: {pet.size} <br/>
+         sex: {pet.sex}
+       </div>
       </div>
      return newpet
     })

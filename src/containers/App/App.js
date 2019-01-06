@@ -8,6 +8,7 @@ import { connect } from 'react-redux'
 import {fetchRandomPet} from '../../thunks/fetchRandomPet'
 import Form from '../Form/Form.js'
 import PetDisplay from '../petDisplay/petDisplay.js'
+import Shelters from '../Shelters/Shelters'
 
 
 class App extends Component {
@@ -38,6 +39,8 @@ class App extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/profile' component={Form} />
           <Route path='/breeds' component={PetDisplay} />
+          <Route path='/shelters' component={Shelters} />
+
         </main>
       </div>
     );

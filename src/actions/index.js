@@ -18,3 +18,10 @@ export const searchBySelection = (pets) => {
     pets
   }
 }
+
+export const searchByShelter = (shelters) => {
+  return {
+    type: 'SEARCH_BY_SHELTER',
+    shelters
+  }
+}
