@@ -1,3 +1,6 @@
-export const addPetsSuccess = (pets) => {
+import { addAllPets } from '../actions/addAllPets'
 
+
+export const fetchAllPets = (url) => {
+  
 }

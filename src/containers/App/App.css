@@ -25,6 +25,8 @@ body {
   /* border: solid 1px black; */
   background-color: #70C3E3;
   color: black;
+  /* position: fixed;
+  top: 0; */
 }
 
 .profile {

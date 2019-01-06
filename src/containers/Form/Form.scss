@@ -2,6 +2,7 @@
   background-color: #EFDFDA;
   height: 500px;
   margin: 20px;
+  padding-bottom: 50px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
@@ -24,4 +25,6 @@
 .submit-form-btn {
   background-color: #70C3E3;
   z-index: 4;
+  border-radius: 40px;
+  font-size: 24px;
 }
