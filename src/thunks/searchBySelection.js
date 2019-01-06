@@ -1,6 +1,4 @@
-import { searchBySelection } from '../actions/searchBySelection'
-// import cleanSearchUrl from '../helpers/helper'
-// import { connect } from 'react-redux'
+import { searchBySelection } from '../actions'
 import cleanPets from '../helpers/cleanPets'
 
 
@@ -20,7 +18,5 @@ export const fetchSearchedPets = (url) => {
       console.log(err)
     }
   }
-  // const url = cleanSearchUrl(search);
 }
 
-// export default fetchSearchedPets

@@ -25,3 +25,15 @@ export const searchByShelter = (shelters) => {
     shelters
   }
 }
+
+export const isLoading = (bool) => {
+  return {
+    type: 'IS_LOADING',
+    bool
+  }
+}
+
+export const hasErrored = (message) => ({
+	type: 'HAS_ERRORED',
+	message
+})

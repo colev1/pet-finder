@@ -38,7 +38,6 @@ class PetDisplay extends Component {
      const img2 = pet.photos[7];
       const newpet = 
       <div className='pet-card' key={pet.id}> 
-     
        <div> 
           <h1> {pet.name} </h1>
           <p className='animal-type'> {pet.animal} . {pet.breed} </p>
