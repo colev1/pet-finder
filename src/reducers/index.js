@@ -1,10 +1,15 @@
 import { combineReducers } from 'redux'
 import  randomPet  from './randomPetsReducer'
-import searchedPets from './searchedPetsReducer'
+import {searchedPets, isLoadingPets} from './searchedPetsReducer'
+import {searchedShelters, isLoadingShelters, hasErrored} from './sheltersReducer'
 
 const rootReducer = combineReducers({
   randomPet, 
-  searchedPets
+  searchedPets,
+  searchedShelters,
+  isLoadingShelters,
+  isLoadingPets,
+  hasErrored
 })
 
 export default rootReducer

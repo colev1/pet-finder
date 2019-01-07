@@ -1,15 +1,15 @@
-export const searchedPets = (state=[], action) => {
+ export const searchedShelters = (state=[], action) => {
   switch(action.type) {
-    case 'SEARCH_BY_SELECTION':
-    return action.pets
+    case 'SEARCH_BY_SHELTER':
+      return action.shelters
     default:
-    return state
+      return state
   }
 }
 
-export const isLoadingPets = (state=false, action) => {
+export const isLoadingShelters = (state=false, action) => {
   switch(action.type) {
-    case 'IS_LOADING_PETS':
+    case 'IS_LOADING':
       return action.isLoading
     default:
       return state
@@ -25,5 +25,4 @@ export const hasErrored = (state = '', action) => {
 	}
 }
 
-
-// export default searchedPets
+// export default searchedShelters

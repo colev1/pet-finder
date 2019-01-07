@@ -1,4 +1,4 @@
-import { addRandomPet } from '../actions/addRandomPet'
+import { addRandomPet } from '../actions'
 import cleanPet from '../helpers/helper'
 
 export const fetchRandomPet = (url) => {

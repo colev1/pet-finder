@@ -18,3 +18,29 @@ export const searchBySelection = (pets) => {
     pets
   }
 }
+
+export const searchByShelter = (shelters) => {
+  return {
+    type: 'SEARCH_BY_SHELTER',
+    shelters
+  }
+}
+
+export const isLoadingShelters = (bool) => {
+  return {
+    type: 'IS_LOADING',
+    isLoading: bool
+  }
+}
+
+export const isLoadingPets = (bool) => {
+  return {
+    type: 'IS_LOADING_PETS',
+  isLoading: bool
+  }
+}
+
+export const hasErrored = (message) => ({
+	type: 'HAS_ERRORED',
+	message
+})

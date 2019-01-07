@@ -1,7 +1,6 @@
 const cleanPets = (pets) => {
-  // console.log(pet)
-  // const cleanedPhotos = cleanPhotos(pet.media.photos.photo)
   return pets.map(pet => {
+    const cleanedPhotos = cleanPhotos(pet.media.photos.photo)
     return {
     name: pet.name.$t,
     age: pet.age.$t,
@@ -17,11 +16,16 @@ const cleanPets = (pets) => {
       state: pet.contact.state.$t,
       email: pet.contact.email.$t,
       city: pet.contact.city.$t
-      }
+      },
+      photos: cleanedPhotos
     }
   })
-  
-  // return pets
+}
+
+const cleanPhotos = (photos) => {
+  return photos.map(photo => {
+    return photo.$t
+  })
 }
 
 export default cleanPets;
