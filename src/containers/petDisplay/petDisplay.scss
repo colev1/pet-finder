@@ -11,7 +11,7 @@
   // flex-direction: row;
   // justify-content: space-around;
   // grid-template-columns: 100px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1r 1fr;
+  grid-template-rows: 20px 1fr;
   margin: 20px;
   position: relative;
   width: 1000px;
@@ -62,9 +62,16 @@ button {
   // z-index: 4;
   border-radius: 40px;
   font-size: 22px;
+  // position: absolute;
+  // top: 100px;
+  text-align: center;
   &:hover {
     background-color: grey;
   }
+}
+
+.submit {
+  
 }
 
 select:hover, button:hover{

@@ -8,15 +8,8 @@ const Home = (props) => {
   const { name, photos, sex, animal, breed, age } = props.randomPet;
   return (
     <div className='home-container'>
-      <h1> find your companion! </h1>
+      <h1> Feeling lonely? find a new best friend! </h1>
       <img src={dog} />
-      {/* <h2> {name} </h2>
-      <p>sex: {sex} </p>
-      <p>animal: {animal} </p>
-      <p>breed: {breed} </p>
-      <p>age: {age} </p> */}
-      <p> You're never too old to make a new best friend!!!! </p>
-      <h3>  </h3>
     </div>
   )
 }

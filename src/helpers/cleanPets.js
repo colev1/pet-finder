@@ -10,6 +10,7 @@ const cleanPets = (pets) => {
     sex: pet.sex.$t,
     shelterId: pet.shelterId.$t,
     size: pet.size.$t,
+    description: pet.description.$t,
     contactInfo: {
       address: pet.contact.address1.$t,
       zip: pet.contact.zip.$t, 

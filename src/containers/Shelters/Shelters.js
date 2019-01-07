@@ -29,7 +29,7 @@ class Shelters extends Component {
   render() {
     let shelters = this.props.searchedShelters.map(shelter => {
        const newShelter = 
-       <div className='pet-card' key={shelter.id}> 
+       <div className='pet-card shelter' key={shelter.id}> 
         <div> 
            <h1> {shelter.name} </h1>
            <p className='animal-type'> {shelter.city} . {shelter.state} </p>

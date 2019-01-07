@@ -21,9 +21,7 @@ class App extends Component {
 
   componentDidMount () {
     const url = 'https://cors-anywhere.herokuapp.com/http://api.petfinder.com/pet.getRandom?key=971b0fa2a8b9c9da1bb222d181ecfd6c&format=json&output=basic';
-    // const url = 'https://cors-anywhere.herokuapp.com/http://api.petfinder.com/pet.get?key=971b0fa2a8b9c9da1bb222d181ecfd6c&id=36705491&format=json';
     this.props.fetchRandomPet(url)
-    console.log(url)
   }
 
   render() {

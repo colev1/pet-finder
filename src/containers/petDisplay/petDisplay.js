@@ -26,7 +26,6 @@ class PetDisplay extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const searchUrl = cleanSearchUrl(this.state)
-    console.log(searchUrl)
     this.props.fetchSearchedPets(searchUrl)
   }
 
@@ -38,8 +37,6 @@ class PetDisplay extends Component {
   }
 
   displayMore = (id) => {
-    // this.props.fetchSelectedPet(url)
-    // this.props.storeSelectedPet(id)
     this.props.history.push('/pet_details')
     this.props.addSelectedPet(id)
   }
@@ -110,8 +107,8 @@ class PetDisplay extends Component {
           <option value='F'>female</option>
         </select>
         <input type='text' placeholder='location' className='grid-item'/>
-        </form>
         <button type='submit'> search! </button>
+        </form>
         <article className='pet-display'> 
           {pets}
         </article>

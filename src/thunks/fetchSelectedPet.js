@@ -5,7 +5,6 @@ import cleanPets from '../helpers/cleanPets'
 
 export const fetchSelectedPet = (id) => {
   const url = `https://cors-anywhere.herokuapp.com/http://api.petfinder.com/pet.get?key=971b0fa2a8b9c9da1bb222d181ecfd6c&id=${id}&format=json`
-  console.log(id)
   return async(dispatch) => {
     try {
       dispatch(isLoadingSelected(true))
@@ -17,8 +16,6 @@ export const fetchSelectedPet = (id) => {
       }
       const result = await response.json()
       const selectedPet = cleanPets([result.petfinder.pet])[0]
-      // const cleanedPet = cleanPet(randomPet)
-      console.log(selectedPet)
       dispatch(addSelectedPet(selectedPet))
       dispatch(isLoadingSelected(false))
   } catch(err) {
