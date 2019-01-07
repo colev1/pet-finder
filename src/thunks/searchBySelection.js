@@ -5,7 +5,7 @@ export const fetchSearchedPets = (url) => {
   return async(dispatch) => {
     try {
       dispatch(hasErrored(''))
-    dispatch(isLoadingPets(true))
+      dispatch(isLoadingPets(true))
       const response = await fetch(url)
       if (!response.ok) {
         throw Error(response.statusText)
@@ -13,9 +13,11 @@ export const fetchSearchedPets = (url) => {
       dispatch(isLoadingPets(false))
       const result = await response.json()
       const pets = cleanPets(result.petfinder.pets.pet)
+      console.log(pets)
       dispatch(searchBySelection(pets))
     } catch(err) {
       dispatch(hasErrored(err.message))
+      console.log(err.message)
     }
   }
 }

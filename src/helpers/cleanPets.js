@@ -23,6 +23,7 @@ const cleanPets = (pets) => {
 }
 
 const cleanPhotos = (photos) => {
+  // console.log(photos)
   return photos.map(photo => {
     return photo.$t
   })

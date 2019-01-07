@@ -1,6 +1,10 @@
-.pet-details {
+@import '../../styles/variables.scss';
+
+.pet-deets {
+  margin: 0;
+  padding: 0;
   // width: 300px;
-  height: 311px;
+  // height: 311px;
   // background-color: white;
   border-radius: 8px;
   display: flex;
@@ -9,10 +13,9 @@
   align-items: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   // font-family: 'Anaheim';
-  position: relative;
-  color: white;
+  // position: relative;
   // outline: 1px solid #000000;
-  padding: 10px;
+  // padding: 10px;
   h1 {
   text-shadow: .5px .5px black;
   font-size: 40px;
@@ -20,22 +23,43 @@
   }
 }
 
-.pet-description {
-  background-color: white;
-  border-radius: 20px;
-  color: black;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  width: 80%;
+.images-container {
+  // display: inline;
+  padding-top: 10px;
+  width: 100%;
+  // height: 80%;
+  // object-fit: cover;
+  border-radius: 8px;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-  border-radius: 8px;
+// .pet-description {
+//   background-color: white;
+//   border-radius: 20px;
+//   color: black;
+//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+//   width: 80%;
+// }
+
+.all-info {
+  background-color: white;
+  color: black; 
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 140px;
+  border-radius: 20px;
+
+}
+
+.details-image {
+  height: 420px;
+  // width: 40%;
+  // height: 500px;
+  // border-radius: 8px;
   
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  // object-fit: cover;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // z-index: -1;
 }

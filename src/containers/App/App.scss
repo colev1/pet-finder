@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Anaheim');
+@import '../../styles/variables.scss';
+
 
 
 .App {
   text-align: center;
-  font-family:'Anaheim', sans-serif;
+  font-family: $font;
   height: 100vh;
   margin: 0;
 }
 
 body {
   margin: 0;
-  background-color: #EF7F74;
+  background-color: $background-color;
 }
 
 .nav-bar {
@@ -23,8 +25,8 @@ body {
   /* width: 100vw; */
   height: 120px;
   /* border: solid 1px black; */
-  background-color: #70C3E3;
-  color: black;
+  background-color: #2A2E48;
+  color: #edeff9;
   /* position: fixed;
   top: 0; */
 }
@@ -34,7 +36,8 @@ body {
 }
 
 .nav {
-  color: black;
+  // color: black;
+  color: #edeff9;
   text-decoration: none;
 }
 

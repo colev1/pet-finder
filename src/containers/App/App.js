@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import { Route, NavLink, withRouter, Switch } from 'react-router-dom'
 import Home from '../Home/Home.js'
 // import { fetchRandomPets } from '../../actions/addRandomPet'
@@ -33,7 +33,7 @@ class App extends Component {
         </header>
         <nav className="nav-bar">
         
-          <NavLink to='/profile' className ='nav profile'> Create a Custom Profile </NavLink>
+          {/* <NavLink to='/profile' className ='nav profile'> Create a Custom Profile </NavLink> */}
           <NavLink to='/' className ='nav'> <i className="fas fa-paw"></i> BestFriendFinder </NavLink>
           <NavLink to='/breeds' className ='nav'> search by breed </NavLink>
           <NavLink to='/shelters' className ='nav'> search by shelter </NavLink>

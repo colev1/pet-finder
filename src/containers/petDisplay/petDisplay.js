@@ -9,6 +9,7 @@ import './petDisplay.scss'
 import {cleanSearchUrl} from '../../helpers/cleanSearchUrl'
 import {fetchSelectedPet} from '../../thunks/fetchSelectedPet'
 import {addSelectedPet} from '../../actions'
+import {Loading} from '../../components/Loading/Loading';
 
 
 class PetDisplay extends Component {
@@ -25,12 +26,12 @@ class PetDisplay extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const searchUrl = cleanSearchUrl(this.state)
+    console.log(searchUrl)
     this.props.fetchSearchedPets(searchUrl)
   }
 
   handleChange = (e) => {
     const {name, value} = e.target;
-    console.log(name, value)
     this.setState({
       [name]: value
     })
@@ -45,6 +46,7 @@ class PetDisplay extends Component {
   }
 
   render() {
+    // console.log(this.props.searchedPets)
     let pets = this.props.searchedPets.map(pet => {
      const img = pet.photos[2];
      const img2 = pet.photos[7];
@@ -52,10 +54,10 @@ class PetDisplay extends Component {
       <div className='pet-card' key={pet.id} onClick={() => this.displayMore(pet.id)}> 
        <div> 
           <h1> {pet.name} </h1>
-          <p className='animal-type'> {pet.animal} . {pet.breed} </p>
+          <p className='animal-type'>  {pet.breed ? pet.breed: pet.animal} </p>
        </div>
-       <img src={img} className='image-1'/>
-       <img src={img2} className='image-2'/>
+       <img src={img} className='display-img image-1'/>
+       <img src={img2} className='display-img image-2'/>
        <div className='pet-description'>
          age: {pet.age} <br/>
          size: {pet.size} <br/>
@@ -65,23 +67,25 @@ class PetDisplay extends Component {
      return newpet
     })
     if (this.props.hasErrored) {
-      pets = <div className="loading">
+      pets = <div className="error">
       No pets match your search!
    </div>
     }  else if (this.props.isLoadingPets) {
-      pets = <div className='loading'> LOADING... </div>
+      pets = <Loading />
     }
 
     return (
       <div> 
         <form className='selection-form' onSubmit={this.handleSubmit}> 
         <select name='animal' onChange={this.handleChange} title="bre">
-          <option selected disabled value=''>CHOOSE AN ANIMAL</option>
-          <option value='dog' >Dog</option>
-          <option value='cat'>Cat</option>
-          <option value='rabbit'>Rabbit</option>
-          <option value='smallfurry'>Small & Furry</option>
-          <option value='other'>other</option>
+          <option selected disabled value=''>all animals</option>
+          <option value='dog' >dogs</option>
+          <option value='cat'>cats</option>
+          <option value='rabbit'>rabbits</option>
+          <option value='smallfurry'>small furry animals</option>
+          <option value='reptile'>reptiles  </option>
+          <option value='barnyard'>barnyard animals</option>
+          <option value='bird'>birds </option>
         </select>
         <select name='size' onChange={this.handleChange}>
           <option value='S'>small</option>

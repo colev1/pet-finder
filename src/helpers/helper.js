@@ -1,6 +1,4 @@
 const cleanPet = (pet) => {
-  console.log(pet)
-  const cleanedPhotos = cleanPhotos(pet.media.photos.photo)
   const cleanedPet = {
     name: pet.name.$t,
     age: pet.age.$t,
@@ -16,8 +14,14 @@ const cleanPet = (pet) => {
       state: pet.contact.state.$t,
       email: pet.contact.email.$t,
       city: pet.contact.city.$t
-    },
-    photos: cleanedPhotos
+    }
+    // photos: cleanedPhotos
+  }
+  // let cleanedPhotos
+  if(pet.media.photos.photo) {
+     let cleanedPhotos = cleanPhotos(pet.media.photos.photo);
+     console.log(cleanedPhotos)
+     cleanedPet.photos = cleanedPhotos;
   }
   return cleanedPet
 }

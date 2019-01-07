@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.loading-container {
+  margin: auto;
+  padding-top:200px;
+}
+.loading{
+  width:20px;
+  height:20px;
+  border-radius:100%;
+  float:left;
+  margin: 10px;
+  // margin-right:5px;
+  background: $light-purple;
+  -webkit-animation:bounce 1.5s infinite;
+}
+.loading-0{
+    -webkit-animation-delay:.1s;
+  
+}
+.loading-1{
+    -webkit-animation-delay:.3s;
+}
+.loading-2{
+    -webkit-animation:bounce 1.5s infinite ease;
+    -webkit-animation-delay:.5s;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    opacity:1;
+  }
+  60% {
+    opacity:.0;
+   
+  }
+}
