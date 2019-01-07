@@ -40,7 +40,23 @@ export const isLoadingPets = (bool) => {
   }
 }
 
-export const hasErrored = (message) => ({
-	type: 'HAS_ERRORED',
-	message
-})
+export const hasErrored = (message) => {
+	return {
+    type: 'HAS_ERRORED',
+    message
+  }
+}
+
+export const addSelectedPet = (id) => {
+  return {
+    type: 'ADD_SELECTED_PET',
+    id
+  }
+}
+
+export const isLoadingSelected = (bool) => {
+  return {
+    type: 'IS_LOADING_SELECTED',
+    isLoading: bool
+  }
+}

@@ -52,8 +52,9 @@ class Shelters extends Component {
       }
         return(
       <div> 
-        <form onSubmit={this.handleSubmit}> 
-        <input value={this.state.search} onChange={this.handleChange} placeholder='Enter your zip code to view shelters near you...'/>
+        <form onSubmit={this.handleSubmit} className="search-form"> 
+        Enter your zip code to view shelters near you...
+        <input value={this.state.search} onChange={this.handleChange} placeholder='zip code'/>
         <button type="submit"> search! </button>
       </form>
       <div className='pet-display'>

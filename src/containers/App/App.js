@@ -9,6 +9,9 @@ import {fetchRandomPet} from '../../thunks/fetchRandomPet'
 import Form from '../Form/Form.js'
 import PetDisplay from '../petDisplay/petDisplay.js'
 import Shelters from '../Shelters/Shelters'
+import PropTypes from 'prop-types';
+import PetDetails from '../Details/PetDetails'
+
 
 
 class App extends Component {
@@ -30,8 +33,8 @@ class App extends Component {
         </header>
         <nav className="nav-bar">
         
-          <NavLink to='/profile' className ='nav profile'> <i class="fas fa-paw"></i> Create a Custom Profile </NavLink>
-        
+          <NavLink to='/profile' className ='nav profile'> Create a Custom Profile </NavLink>
+          <NavLink to='/' className ='nav'> <i className="fas fa-paw"></i> BestFriendFinder </NavLink>
           <NavLink to='/breeds' className ='nav'> search by breed </NavLink>
           <NavLink to='/shelters' className ='nav'> search by shelter </NavLink>
         </nav>
@@ -40,7 +43,7 @@ class App extends Component {
           <Route path='/profile' component={Form} />
           <Route path='/breeds' component={PetDisplay} />
           <Route path='/shelters' component={Shelters} />
-
+          <Route path='/pet_details' component={PetDetails} />
         </main>
       </div>
     );
@@ -56,5 +59,12 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   fetchRandomPet: (url) => dispatch(fetchRandomPet(url))
 })
+
+App.propTypes = {
+  pets: PropTypes.array,
+  isLoading: PropTypes.bool,
+  error: PropTypes.string,
+  fetchRandomPet: PropTypes.func.isRequired
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
