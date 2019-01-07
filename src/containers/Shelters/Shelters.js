@@ -2,11 +2,12 @@ import React, {Component } from 'react'
 import { connect } from 'react-redux'
 import {fetchSearchedShelters} from '../../thunks/searchByShelter'
 import '../petDisplay/petDisplay.scss'
+import './Shelters.scss'
 
 
 class Shelters extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       search: ''
     }
@@ -25,7 +26,7 @@ class Shelters extends Component {
   }
 
   render() {
-    const shelters = this.props.searchedShelters.map(shelter => {
+    let shelters = this.props.searchedShelters.map(shelter => {
        const newShelter = 
        <div className='pet-card' key={shelter.id}> 
         <div> 
@@ -39,7 +40,17 @@ class Shelters extends Component {
        </div>
       return newShelter
      })
-    return(
+     if (this.props.isLoadingShelters) {
+      shelters = <div className="loading">
+           LOADING SHELTERS...
+        </div>
+       }
+      if (this.props.hasErrored) {
+        shelters = <div className="loading">
+           No shelters match your search!
+        </div>
+      }
+        return(
       <div> 
         <form onSubmit={this.handleSubmit}> 
         <input value={this.state.search} onChange={this.handleChange} placeholder='Enter your zip code to view shelters near you...'/>
@@ -50,11 +61,13 @@ class Shelters extends Component {
       </div>
       </div>
     )
-  }
+      }
 }
 
 const mapStateToProps = (state) => ({
-  searchedShelters: state.searchedShelters
+  searchedShelters: state.searchedShelters,
+  isLoadingShelters: state.isLoadingShelters,
+  hasErrored: state.hasErrored
 })
 
 

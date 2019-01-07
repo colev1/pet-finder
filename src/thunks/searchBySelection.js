@@ -1,21 +1,21 @@
-import { searchBySelection } from '../actions'
+import { searchBySelection, hasErrored, isLoadingPets } from '../actions'
 import cleanPets from '../helpers/cleanPets'
-
 
 export const fetchSearchedPets = (url) => {
   return async(dispatch) => {
     try {
+      dispatch(hasErrored(''))
+      dispatch(isLoadingPets(true))
       const response = await fetch(url)
       if (!response.ok) {
         throw Error(response.statusText)
       }
+      dispatch(isLoadingPets(false))
       const result = await response.json()
-      console.log(result.petfinder.pets)
       const pets = cleanPets(result.petfinder.pets.pet)
-      console.log(pets)
       dispatch(searchBySelection(pets))
     } catch(err) {
-      console.log(err)
+      dispatch(hasErrored(err.message))
     }
   }
 }

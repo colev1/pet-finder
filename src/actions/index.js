@@ -26,10 +26,17 @@ export const searchByShelter = (shelters) => {
   }
 }
 
-export const isLoading = (bool) => {
+export const isLoadingShelters = (bool) => {
   return {
     type: 'IS_LOADING',
-    bool
+    isLoading: bool
+  }
+}
+
+export const isLoadingPets = (bool) => {
+  return {
+    type: 'IS_LOADING_PETS',
+  isLoading: bool
   }
 }
 

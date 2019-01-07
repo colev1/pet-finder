@@ -48,7 +48,9 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  pets: state.pets
+  pets: state.pets,
+  isLoading: state.isLoading,
+  error: state.error
 })
 
 const mapDispatchToProps = (dispatch) => ({

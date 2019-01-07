@@ -33,7 +33,7 @@ class PetDisplay extends Component {
   }
 
   render() {
-    const pets = this.props.searchedPets.map(pet => {
+    let pets = this.props.searchedPets.map(pet => {
      const img = pet.photos[2];
      const img2 = pet.photos[7];
       const newpet = 
@@ -52,6 +52,14 @@ class PetDisplay extends Component {
       </div>
      return newpet
     })
+    if (this.props.hasErrored) {
+      pets = <div className="loading">
+      No pets match your search!
+   </div>
+    }  else if (this.props.isLoadingPets) {
+      pets = <div className='loading'> LOADING... </div>
+    }
+
     return (
       <div> 
         <form className='selection-form' onSubmit={this.handleSubmit}> 
@@ -90,7 +98,9 @@ class PetDisplay extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  searchedPets: state.searchedPets
+  searchedPets: state.searchedPets,
+  isLoadingPets: state.isLoadingPets,
+  hasErrored: state.hasErrored
 })
 
 const mapDispatchToProps = (dispatch) => ({
