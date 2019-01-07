@@ -81,3 +81,16 @@ img {
   left: 0;
   z-index: -1;
 }
+
+.image-2 {
+  display: none;
+}
+
+.pet-card:hover {
+  .image-1 {
+    display: none
+  }
+  .image-2 {
+    display: unset;
+  }
+}

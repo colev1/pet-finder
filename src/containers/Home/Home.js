@@ -15,13 +15,13 @@ const Home = (props) => {
       <p>age: {age} </p> */}
       <p> Create a profile to find a new best friend! </p>
       <h3> animals available near you </h3>
-      <article className='random-animal'> 
+      {/* <article className='random-animal'> 
         <h2> {name} </h2>
         <p>sex: {sex} </p>
         <p>animal: {animal} </p>
         <p>breed: {breed} </p>
         <p>age: {age} </p>
-      </article>
+      </article> */}
     </div>
   )
 }
