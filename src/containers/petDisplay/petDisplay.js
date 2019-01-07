@@ -38,7 +38,6 @@ class PetDisplay extends Component {
   }
 
   displayMore = (id) => {
-    const url = `https://cors-anywhere.herokuapp.com/http://api.petfinder.com/pet.get?key=971b0fa2a8b9c9da1bb222d181ecfd6c&id=${id}&format=json`
     // this.props.fetchSelectedPet(url)
     // this.props.storeSelectedPet(id)
     this.props.history.push('/pet_details')
@@ -77,37 +76,45 @@ class PetDisplay extends Component {
     return (
       <div> 
         <form className='selection-form' onSubmit={this.handleSubmit}> 
-        <select name='animal' onChange={this.handleChange} title="bre">
+
+        <p className='grid-item'>animal</p>
+        <p className='grid-item'>size </p>
+        <p className='grid-item'>age </p>
+        <p className='grid-item'>sex </p>
+        <p className='grid-item'>location </p>
+
+        <select name='animal' onChange={this.handleChange} className='grid-item'>
           <option selected disabled value=''>all animals</option>
-          <option value='dog' >dogs</option>
-          <option value='cat'>cats</option>
-          <option value='rabbit'>rabbits</option>
-          <option value='smallfurry'>small furry animals</option>
-          <option value='reptile'>reptiles  </option>
-          <option value='barnyard'>barnyard animals</option>
-          <option value='bird'>birds </option>
+          <option value='dog'> dogs</option>
+          <option value='cat'> cats</option>
+          <option value='rabbit'> rabbits</option>
+          <option value='smallfurry'> small furry animals</option>
+          <option value='reptile'> reptiles  </option>
+          <option value='barnyard'> barnyard animals</option>
+          <option value='bird'> birds </option>
         </select>
-        <select name='size' onChange={this.handleChange}>
+        <select name='size' onChange={this.handleChange} className='grid-item'>
           <option value='S'>small</option>
           <option value='M'>medium</option>
           <option value='L'>large</option>
           <option value='XL'>extra-large</option>
         </select>
-        <select name='age' onChange={this.handleChange}>
+        <select name='age' onChange={this.handleChange} className='grid-item'>
           <option value='Baby'>baby</option>
           <option value='Young'>young</option>
           <option value='Adult'>adult</option>
           <option value='Senior'>senior</option>
         </select>
-        <select name='sex' onChange={this.handleChange}>
+        <select name='sex' onChange={this.handleChange} className='grid-item'>
           <option value='M'>male</option>
           <option value='F'>female</option>
         </select>
-        <button type='submit'> search for a companion! </button>
+        <input type='text' placeholder='location' className='grid-item'/>
         </form>
+        <button type='submit'> search! </button>
         <article className='pet-display'> 
           {pets}
-          </article>
+        </article>
       </div>
     )
   }
@@ -123,7 +130,6 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   fetchSearchedPets: (search) => dispatch(fetchSearchedPets(search)),
   addSelectedPet: (id) => dispatch(addSelectedPet(id))
-  // fetchSelectedPet: (id) => dispatch(fetchSelectedPet(id))
-  // storeSelectedPet: (id) => dispatch(storeSelectedPet(id))
 })
+
 export default connect(mapStateToProps, mapDispatchToProps)(PetDisplay);

@@ -34,7 +34,7 @@ class App extends Component {
         <nav className="nav-bar">
         
           {/* <NavLink to='/profile' className ='nav profile'> Create a Custom Profile </NavLink> */}
-          <NavLink to='/' className ='nav'> <i className="fas fa-paw"></i> BestFriendFinder </NavLink>
+          <NavLink to='/' className ='nav header'> <i className="fas fa-paw"></i> Pups4Pops </NavLink>
           <NavLink to='/breeds' className ='nav'> search by breed </NavLink>
           <NavLink to='/shelters' className ='nav'> search by shelter </NavLink>
         </nav>
