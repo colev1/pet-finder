@@ -61,11 +61,11 @@ class PetDetails extends Component {
   
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   selectedPet: state.selectedPet,
   isLoadingSelected: state.isLoadingSelected
 })
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   fetchSelectedPet: (id) => dispatch(fetchSelectedPet(id))
 })
 
