@@ -30,7 +30,6 @@ class PetDetails extends Component {
       )
     } else {
     const {name, id, age, size, animal, breed, sex, shelterId, contactInfo, photos, description} = this.props.selectedPet
-      // const img1 = photos[2]
       return (
         <div className='pet-deets'>
         <div className='all-info'> 
@@ -52,8 +51,6 @@ class PetDetails extends Component {
             <br/>
             Adopt me!
           </div>
-          {/* <p> shelterId: {shelter}</p> */}
-          {/* <p> contactInfo: {contactInfo}</p> */}
         </div>
         ) 
     }
@@ -65,6 +62,7 @@ export const mapStateToProps = (state) => ({
   selectedPet: state.selectedPet,
   isLoadingSelected: state.isLoadingSelected
 })
+
 export const mapDispatchToProps = (dispatch) => ({
   fetchSelectedPet: (id) => dispatch(fetchSelectedPet(id))
 })
