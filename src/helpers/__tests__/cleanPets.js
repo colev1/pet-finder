@@ -5,7 +5,7 @@ describe('clean pets helper', () => {
   let pets; 
   let result;
   
-  it('takes in an array of pets and returns a cleaned version', () => {
+  it.skip('takes in an array of pets and returns a cleaned version', () => {
      pets = [
       {
         age: {$t: "Adult"},

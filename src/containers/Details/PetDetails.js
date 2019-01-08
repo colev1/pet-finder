@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import './PetDetails.scss'
 import {fetchSelectedPet} from '../../thunks/fetchSelectedPet'
 import {Loading} from '../../components/Loading/Loading'
+import PropTypes from 'prop-types' 
 
 
 
