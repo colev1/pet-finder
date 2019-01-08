@@ -24,5 +24,3 @@ export const hasErrored = (state = '', action) => {
 		return state
 	}
 }
-
-// export default searchedShelters
