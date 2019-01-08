@@ -22,3 +22,11 @@ describe('is loading shelters', () => {
     expect(result).toEqual(bool)
   })
 })
+
+describe('hasErrored', () => {
+  it('should return the state with an error message', () => {
+    const message = 'error message'
+    const result = hasErrored('', actions.hasErrored(message))
+    expect(result).toEqual(message)
+  })
+})
