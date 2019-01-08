@@ -2,6 +2,8 @@ import { connect } from "react-redux";
 import React, {Component} from 'react'
 import './PetDetails.scss'
 import {fetchSelectedPet} from '../../thunks/fetchSelectedPet'
+import {Loading} from '../../components/Loading/Loading'
+import PropTypes from 'prop-types' 
 
 
 
@@ -22,22 +24,34 @@ class PetDetails extends Component {
   }
 
   render() {
-    const {name, id, age, size, animal, breed, sex, shelterId, contactInfo, photos} = this.props.selectedPet
-    // const img1 = photos[2]
-    if(this.props.isLoadingSelected) {
-      return (<div className='loading'>
-        LOADING...
-      </div>)
-    } else {
+    if(this.props.isLoadingSelected || typeof(this.props.selectedPet)==='string' ) {
       return (
-        <div className='pet-details'>
-          {/* <img src={img1} /> */}
-          <h1> {name}</h1>
-          <p> age: {age} </p>
-          <p> size: {size}</p>
-          <p> animal: {animal}</p>
-          <p> breed: {breed}</p>
+        <Loading />
+      )
+    } else {
+    const {name, id, age, size, animal, breed, sex, shelterId, contactInfo, photos, description} = this.props.selectedPet
+      // const img1 = photos[2]
+      return (
+        <div className='pet-deets'>
+        <div className='all-info'> 
+          <h1> {name}</h1> 
+          <p> {breed}</p>
+          <p> {age} </p>
           <p> sex: {sex}</p>
+          <p>  {size}</p>      
+        </div>
+          <div className='images-container'>
+            <img src={photos[2]} 
+          className='details-image' />
+            <img src={photos[7]} 
+            className='details-image' />
+          </div>
+          <p>  {description}</p> 
+          <div> 
+            <i className="fas fa-paw"></i>
+            <br/>
+            Adopt me!
+          </div>
           {/* <p> shelterId: {shelter}</p> */}
           {/* <p> contactInfo: {contactInfo}</p> */}
         </div>

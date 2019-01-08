@@ -1,6 +1,12 @@
 const cleanPets = (pets) => {
   return pets.map(pet => {
-    const cleanedPhotos = cleanPhotos(pet.media.photos.photo)
+    let cleanedPhotos;
+    if(pet.media.photos.photo) {
+      cleanedPhotos = cleanPhotos(pet.media.photos.photo)
+    } else {
+      cleanedPhotos = []
+    }
+    console.log(cleanedPhotos)
     return {
     name: pet.name.$t,
     age: pet.age.$t,
@@ -10,6 +16,7 @@ const cleanPets = (pets) => {
     sex: pet.sex.$t,
     shelterId: pet.shelterId.$t,
     size: pet.size.$t,
+    description: pet.description.$t,
     contactInfo: {
       address: pet.contact.address1.$t,
       zip: pet.contact.zip.$t, 
@@ -23,9 +30,7 @@ const cleanPets = (pets) => {
 }
 
 const cleanPhotos = (photos) => {
-  return photos.map(photo => {
-    return photo.$t
-  })
+  return photos.map(photo => photo.$t)
 }
 
 export default cleanPets;
