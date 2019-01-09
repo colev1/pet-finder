@@ -1,4 +1,4 @@
-# Movie Tracker 
+# PET FINDER
 
 ### Description of App:
 
