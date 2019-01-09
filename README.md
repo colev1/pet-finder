@@ -1,7 +1,8 @@
 # PET FINDER
 
 ### Description of App:
-This app was assigned an audience and a database.
+This app was to create an App that serves a random audience using an API. My App is meant to serve an audience of elderly adults, using the Pet Finder API.  Users can come to this application and find a companion pet; and have the ability to search by breed or search by shelters using their location.
+
 
 ### Technologies used:
 * React
