@@ -1,7 +1,7 @@
 # PET FINDER
 
 ### Description of App:
-
+This app was assigned an audience and a database.
 
 ### Technologies used:
 * React
