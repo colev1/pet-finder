@@ -23,15 +23,19 @@ class PetDetails extends Component {
         <Loading />
       )
     } 
-      const {name, age, size, breed, sex, photos, description} = this.props.selectedPet;
+      let {name, age, breed, sex, photos, description} = this.props.selectedPet;
+      if (sex === 'F') {
+        sex = 'female'
+      } else if (sex === 'M') {
+        sex = 'male'
+      }
       return (
         <div className='pet-deets'>
           <div className='all-info'> 
             <h1> {name} </h1> 
             <p> {breed} </p>
-            <p> {age} </p>
-            <p> sex: {sex} </p>
-            <p>  {size} </p>      
+            <p> {age.toLowerCase()} </p>
+            <p> {sex} </p>   
           </div>
           <div className='images-container'>
             <img src={photos[2]} alt='Pet' 
@@ -42,7 +46,7 @@ class PetDetails extends Component {
             className='details-image' 
             />
           </div>
-            <p>  {description}
+            <p className='description'>  {description}
             </p> 
           <div> 
             <i className="fas fa-paw"></i>
