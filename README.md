@@ -29,7 +29,7 @@ In the movie-tracker directory, you can run the test files using:
 ### Design and Layout
 
 ##### Wireframe:
-![Wireframe of homepage](wireframe1.png)
+![Wireframe of homepage](src/assets/wireframe1.png)
 
 ![Wireframe of viewing movie](wireframe2.png)
 
