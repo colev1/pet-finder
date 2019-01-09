@@ -15,8 +15,8 @@ This app was to create an App that serves a random audience using an API. My App
 ### Setup:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-* `git clone https://github.com/colev1/movie-tracker`
-* `cd movie-tracker/`
+* `git clone https://github.com/colev1/pet-finder`
+* `cd pet-finder/`
 * `npm install`
 * `npm start`
 
