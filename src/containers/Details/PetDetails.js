@@ -1,14 +1,19 @@
 import { connect } from "react-redux"
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './PetDetails.scss'
-import {fetchSelectedPet} from '../../thunks/fetchSelectedPet'
-import {Loading} from '../../components/Loading/Loading'
+import { fetchSelectedPet } from '../../thunks/fetchSelectedPet'
+import { Loading } from '../../components/Loading/Loading'
 import PropTypes from 'prop-types' 
 
 class PetDetails extends Component {
    componentDidMount() {
-    this.props.fetchSelectedPet(this.props.selectedPet)
-    // localStorage.setItem('selected', this.props.selectedPet)
+     let petId;
+    if(this.props.selectedPet === '' || typeof(this.props.selectedPet) === 'object') {
+      petId = JSON.parse(localStorage.getItem('item'))
+    } else {
+      petId = this.props.selectedPet;
+    }
+    this.props.fetchSelectedPet(petId)
   }
 
   render() {
@@ -18,7 +23,7 @@ class PetDetails extends Component {
         <Loading />
       )
     } else {
-    const {name, id, age, size, animal, breed, sex, shelterId, contactInfo, photos, description} = this.props.selectedPet
+      const {name, id, age, size, breed, sex, contactInfo, photos, description} = this.props.selectedPet;
       return (
         <div className='pet-deets'>
           <div className='all-info'> 

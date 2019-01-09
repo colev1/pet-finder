@@ -14,7 +14,7 @@ export const fetchSelectedPet = (id) => {
       const selectedPet = cleanPets([result.petfinder.pet])[0]
       dispatch(addSelectedPet(selectedPet))
       dispatch(isLoadingSelected(false))
-      localStorage.setItem('selected', JSON.stringify(selectedPet))
+      // localStorage.setItem('selected', JSON.stringify(selectedPet))
   } catch(err) {
       dispatch(hasErrored(err.message))
     }

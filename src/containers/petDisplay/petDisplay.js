@@ -1,14 +1,11 @@
-import React, {Component } from 'react'
-import { Route, NavLink, withRouter, Switch } from 'react-router-dom'
-import {fetchSearchedPets} from '../../thunks/searchBySelection'
+import React, { Component } from 'react'
+import { fetchSearchedPets } from '../../thunks/searchBySelection'
 import { connect } from 'react-redux'
 import './petDisplay.scss'
-import {cleanSearchUrl} from '../../helpers/cleanSearchUrl'
+import { cleanSearchUrl } from '../../helpers/cleanSearchUrl'
 import PropTypes from 'prop-types';
-import {fetchSelectedPet} from '../../thunks/fetchSelectedPet'
-import {addSelectedPet} from '../../actions'
-import {Loading} from '../../components/Loading/Loading';
-
+import { addSelectedPet } from '../../actions'
+import { Loading } from '../../components/Loading/Loading'
 
 export class PetDisplay extends Component {
   constructor(props) {
@@ -36,6 +33,7 @@ export class PetDisplay extends Component {
 
   displayMore = (id) => {
     this.props.addSelectedPet(id)
+    localStorage.setItem('item', JSON.stringify(id))
     this.props.history.push('/pet_details')
   }
 
