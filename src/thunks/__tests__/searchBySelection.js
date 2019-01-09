@@ -1,19 +1,19 @@
-import { fetchSelectedPet } from '../fetchSelectedPet'
-import { isLoadingSelected, hasErrored, addSelectedPet } from '../../actions'
+import { fetchSearchedPets } from '../searchBySelection'
+import { isLoadingPets, hasErrored } from '../../actions'
 
-describe ('fetch selected pet', () => {
-  let mockId;
+describe ('search by selected pet filters', () => {
+  let mockSearch
   let mockDispatch
 
   beforeEach(() => {
-    mockId = 0
+    mockSearch = {animal: 'dog'}
     mockDispatch = jest.fn()
   })
 
   it('calls dispatch with the isLoading action', () => {
-    const thunk = fetchSelectedPet(mockId)
+    const thunk = fetchSearchedPets(mockSearch)
     thunk(mockDispatch)
-    expect(mockDispatch).toHaveBeenCalledWith(isLoadingSelected(true))
+    expect(mockDispatch).toHaveBeenCalledWith(isLoadingPets(true))
   })
 
   it('should dispatch hasErrored with a message if the response is not ok', async () => {
@@ -22,7 +22,7 @@ describe ('fetch selected pet', () => {
       statusText: 'Something went wrong'
     }))
   
-    const thunk = fetchSelectedPet(mockId)
+    const thunk = fetchSearchedPets(mockSearch)
     await thunk(mockDispatch)
     expect(mockDispatch).toHaveBeenCalledWith(hasErrored('Something went wrong'))
   })
