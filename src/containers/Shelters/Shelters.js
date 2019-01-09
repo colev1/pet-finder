@@ -1,9 +1,11 @@
 import React, {Component } from 'react'
 import { connect } from 'react-redux'
-import {fetchSearchedShelters} from '../../thunks/searchByShelter'
+import { fetchSearchedShelters } from '../../thunks/searchByShelter'
 import '../petDisplay/petDisplay.scss'
 import './Shelters.scss'
 import { Loading } from '../../components/Loading/Loading'
+import PropTypes from 'prop-types'
+
 
 class Shelters extends Component {
   constructor(props) {
@@ -22,7 +24,6 @@ class Shelters extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.fetchSearchedShelters(this.state)
-    // console.log(lol)
   }
 
   render() {
@@ -73,5 +74,12 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   fetchSearchedShelters: (search) => dispatch(fetchSearchedShelters(search))
 })
+
+Shelters.propTypes = {
+  searchedShelters: PropTypes.array.isRequired,
+  isLoadingShelters: PropTypes.bool.isRequired,
+  hasErrored: PropTypes.string,
+  fetchSearchedShelters: PropTypes.func
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Shelters)

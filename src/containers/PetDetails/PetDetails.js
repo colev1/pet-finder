@@ -70,7 +70,6 @@ export const mapDispatchToProps = dispatch => ({
 export default connect(mapStateToProps, mapDispatchToProps)(PetDetails);
 
 PetDetails.propTypes = {
-  selectedPet: PropTypes.object.isRequired,
   isLoadingSelected: PropTypes.bool,
   fetchSelectedPet: PropTypes.func,
 };

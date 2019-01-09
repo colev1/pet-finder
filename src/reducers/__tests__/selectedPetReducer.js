@@ -1,4 +1,4 @@
-import { selectedPet, isLoading} from '../selectedPetReducer';
+import { selectedPet, isLoadingSelected } from '../selectedPetReducer';
 import * as actions from '../../actions';
 
 describe('selected pet reducer', () => {
@@ -12,5 +12,13 @@ describe('selected pet reducer', () => {
     const petId = 0;
     const result = selectedPet(undefined, actions.addSelectedPet(petId));
     expect(result).toEqual(petId);
+  });
+});
+
+describe('is loading ', () => {
+  it('should return state with a true or false value', () => {
+    const bool = true;
+    const result = isLoadingSelected(false, actions.isLoadingSelected(bool));
+    expect(result).toEqual(bool);
   });
 });
