@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import {searchedPets, isLoadingPets} from './searchedPetsReducer'
-import {selectedPet, isLoadingSelected} from './selectedPetReducer'
-import {searchedShelters, isLoadingShelters, hasErrored} from './sheltersReducer'
+import { searchedPets, isLoadingPets } from './searchedPetsReducer'
+import { selectedPet, isLoadingSelected } from './selectedPetReducer'
+import { searchedShelters, isLoadingShelters, hasErrored } from './sheltersReducer'
 
 const rootReducer = combineReducers({
   searchedPets,
@@ -13,4 +13,4 @@ const rootReducer = combineReducers({
   isLoadingSelected
 })
 
-export default rootReducer
+export default rootReducer;

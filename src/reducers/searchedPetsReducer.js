@@ -1,9 +1,9 @@
 export const searchedPets = (state=[], action) => {
   switch(action.type) {
     case 'SEARCH_BY_SELECTION':
-    return action.pets
+      return action.pets
     default:
-    return state
+      return state
   }
 }
 
@@ -24,6 +24,3 @@ export const hasErrored = (state = '', action) => {
 		return state
 	}
 }
-
-
-// export default searchedPets

@@ -3,8 +3,7 @@ import { connect } from 'react-redux'
 import {fetchSearchedShelters} from '../../thunks/searchByShelter'
 import '../petDisplay/petDisplay.scss'
 import './Shelters.scss'
-import {Loading} from '../../components/Loading/Loading'
-
+import { Loading } from '../../components/Loading/Loading'
 
 class Shelters extends Component {
   constructor(props) {

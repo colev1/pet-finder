@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { fetchSearchedPets } from '../../thunks/searchBySelection'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 import './petDisplay.scss'
+import { fetchSearchedPets } from '../../thunks/searchBySelection'
 import { cleanSearchUrl } from '../../helpers/cleanSearchUrl'
-import PropTypes from 'prop-types';
 import { addSelectedPet } from '../../actions'
 import { Loading } from '../../components/Loading/Loading'
 
@@ -39,27 +39,27 @@ export class PetDisplay extends Component {
 
   render() {
     let pets = this.props.searchedPets.map(pet => {
-     const img = pet.photos[2];
+     const img = pet.photos[2]
      let img2;
      if (pet.photos[7]) {
-       img2 = pet.photos[7];
+       img2 = pet.photos[7]
      } else {
-       img2=img
+       img2 = img
      }
-      const newpet = 
+      const newpet = (
       <div className='pet-card' key={pet.id} onClick={() => this.displayMore(pet.id)}> 
        <div> 
           <h1> {pet.name} </h1>
           <p className='animal-type'>  {pet.breed ? pet.breed: pet.animal} </p>
        </div>
-       <img src={img} className='display-img image-1'/>
-       <img src={img2} className='display-img image-2'/>
+       <img src={img} alt='Pet' className='display-img image-1'/>
+       <img src={img2} alt='Pet' className='display-img image-2'/>
        <div className='pet-description'>
          age: {pet.age} <br/>
          size: {pet.size} <br/>
          sex: {pet.sex}
        </div>
-      </div>
+      </div> )
      return newpet
     })
     if (this.props.hasErrored) {
@@ -76,14 +76,12 @@ export class PetDisplay extends Component {
         <p className='grid-item'>animal</p>
         <p className='grid-item'>age </p>
         <p className='grid-item'>sex </p>
-        <p className='grid-item'>location </p>
         <select name='animal' onChange={this.handleChange} className='grid-item' defaultValue='all'>
           <option disabled value='all'>all animals</option>
           <option value='dog'> dogs</option>
           <option value='cat'> cats</option>
           <option value='rabbit'> rabbits</option>
           <option value='smallfurry'> small furry animals</option>
-          <option value='reptile'> reptiles  </option>
           <option value='barnyard'> barnyard animals</option>
           <option value='bird'> birds </option>
         </select>
@@ -98,7 +96,6 @@ export class PetDisplay extends Component {
           <option value='M'>male</option>
           <option value='F'>female</option>
         </select>
-        <input type='text' name='location' placeholder='location' className='grid-item' onChange={this.handleChange}/>
         <button type='submit'> search! </button>
         </form>
         <article className='pet-display'> 
