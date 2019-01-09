@@ -29,13 +29,15 @@ In the movie-tracker directory, you can run the test files using:
 ### Design and Layout
 
 ##### Wireframe:
-![Wireframe of homepage](src/assets/wireframe1.png)
+![Wireframe](src/assets/wireframe1.png)
 
-![Wireframe of viewing movie](wireframe2.png)
+![Wireframe](src/assets/wireframe2.png)
+
+![Wireframe](src/assets/wireframe3.png)
 
 ##### The App:
 
-![Screenshot of app](app1.png)
+![Screenshot of app](src/assets/app1.png)
 
-![Second screenshot of app](app2.png)
+![Second screenshot of app](src/assets/app2.png)
 
