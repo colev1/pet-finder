@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import { Home } from '../../components/Home/Home.js'
 import PetDisplay from '../petDisplay/petDisplay.js'
 import Shelters from '../Shelters/Shelters'
-import PetDetails from '../Details/PetDetails'
+import PetDetails from '../PetDetails/PetDetails'
 import ErrorPage from '../../components/ErrorPage/ErrorPage'
 
 
