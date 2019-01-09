@@ -1,14 +1,11 @@
-import React, {Component } from 'react'
-import { Route, NavLink, withRouter, Switch } from 'react-router-dom'
-import {fetchSearchedPets} from '../../thunks/searchBySelection'
+import React, { Component } from 'react'
+import { fetchSearchedPets } from '../../thunks/searchBySelection'
 import { connect } from 'react-redux'
 import './petDisplay.scss'
-import {cleanSearchUrl} from '../../helpers/cleanSearchUrl'
+import { cleanSearchUrl } from '../../helpers/cleanSearchUrl'
 import PropTypes from 'prop-types';
-import {fetchSelectedPet} from '../../thunks/fetchSelectedPet'
-import {addSelectedPet} from '../../actions'
-import {Loading} from '../../components/Loading/Loading';
-
+import { addSelectedPet } from '../../actions'
+import { Loading } from '../../components/Loading/Loading'
 
 export class PetDisplay extends Component {
   constructor(props) {
@@ -35,8 +32,9 @@ export class PetDisplay extends Component {
   }
 
   displayMore = (id) => {
-    this.props.history.push('/pet_details')
     this.props.addSelectedPet(id)
+    localStorage.setItem('item', JSON.stringify(id))
+    this.props.history.push('/pet_details')
   }
 
   render() {
@@ -75,14 +73,12 @@ export class PetDisplay extends Component {
     return (
       <div> 
         <form className='selection-form' onSubmit={this.handleSubmit}> 
-
         <p className='grid-item'>animal</p>
         <p className='grid-item'>age </p>
         <p className='grid-item'>sex </p>
         <p className='grid-item'>location </p>
-
-        <select name='animal' onChange={this.handleChange} className='grid-item'>
-          <option selected disabled value=''>all animals</option>
+        <select name='animal' onChange={this.handleChange} className='grid-item' defaultValue='all'>
+          <option disabled value='all'>all animals</option>
           <option value='dog'> dogs</option>
           <option value='cat'> cats</option>
           <option value='rabbit'> rabbits</option>
@@ -92,7 +88,7 @@ export class PetDisplay extends Component {
           <option value='bird'> birds </option>
         </select>
         <select name='age' onChange={this.handleChange} className='grid-item'>
-          <option selected disabled >choose an age..</option>
+          <option disabled >choose an age..</option>
           <option value='Baby'>baby</option>
           <option value='Young'>young</option>
           <option value='Adult'>adult</option>

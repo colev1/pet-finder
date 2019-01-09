@@ -64,14 +64,14 @@ class Shelters extends Component {
       }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   searchedShelters: state.searchedShelters,
   isLoadingShelters: state.isLoadingShelters,
   hasErrored: state.hasErrored
 })
 
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   fetchSearchedShelters: (search) => dispatch(fetchSearchedShelters(search))
 })
 

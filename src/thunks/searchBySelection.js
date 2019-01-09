@@ -13,7 +13,6 @@ export const fetchSearchedPets = (url) => {
       dispatch(isLoadingPets(false))
       const result = await response.json()
       const pets = await cleanPets(result.petfinder.pets.pet)
-      // console.log(pets)
       dispatch(searchBySelection(pets))
     } catch(err) {
       dispatch(hasErrored(err.message))

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import { Route, NavLink, withRouter, Switch } from 'react-router-dom'
-import Home from '../Home/Home.js'
+import {Home} from '../../components/Home/Home.js'
 import { connect } from 'react-redux' 
 import PetDisplay from '../petDisplay/petDisplay.js'
 import Shelters from '../Shelters/Shelters'

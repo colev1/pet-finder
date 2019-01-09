@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import { searchByShelter, hasErrored, isLoadingShelters } from '../actions';
 import cleanShelters from '../helpers/cleanShelters';
 

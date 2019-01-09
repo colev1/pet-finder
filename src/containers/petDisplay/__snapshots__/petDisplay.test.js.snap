@@ -207,7 +207,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -570,7 +571,8 @@ ReactWrapper {
                     >
                       <option
                         disabled=""
-                        value=""
+                        selected=""
+                        value="all"
                       >
                         all animals
                       </option>
@@ -893,7 +895,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -1256,7 +1259,8 @@ ReactWrapper {
                     >
                       <option
                         disabled=""
-                        value=""
+                        selected=""
+                        value="all"
                       >
                         all animals
                       </option>
@@ -1599,7 +1603,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                "lineNumber": 79,
+                "lineNumber": 78,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -1634,7 +1638,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                  "lineNumber": 80,
+                  "lineNumber": 79,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -1669,7 +1673,7 @@ ReactWrapper {
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
                     "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                    "lineNumber": 81,
+                    "lineNumber": 80,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
@@ -1704,7 +1708,7 @@ ReactWrapper {
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
                       "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                      "lineNumber": 82,
+                      "lineNumber": 81,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -1739,7 +1743,7 @@ ReactWrapper {
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
                         "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                        "lineNumber": 84,
+                        "lineNumber": 82,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -1750,7 +1754,7 @@ ReactWrapper {
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
                           "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                          "lineNumber": 85,
+                          "lineNumber": 83,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -1768,8 +1772,7 @@ ReactWrapper {
                         "memoizedProps": Object {
                           "children": "all animals",
                           "disabled": true,
-                          "selected": true,
-                          "value": "",
+                          "value": "all",
                         },
                         "memoizedState": null,
                         "mode": 0,
@@ -1777,8 +1780,7 @@ ReactWrapper {
                         "pendingProps": Object {
                           "children": "all animals",
                           "disabled": true,
-                          "selected": true,
-                          "value": "",
+                          "value": "all",
                         },
                         "ref": null,
                         "return": [Circular],
@@ -1789,7 +1791,7 @@ ReactWrapper {
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                            "lineNumber": 86,
+                            "lineNumber": 84,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -1824,7 +1826,7 @@ ReactWrapper {
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                              "lineNumber": 87,
+                              "lineNumber": 85,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -1859,7 +1861,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 88,
+                                "lineNumber": 86,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -1894,7 +1896,7 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                  "lineNumber": 89,
+                                  "lineNumber": 87,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -1929,7 +1931,7 @@ ReactWrapper {
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
                                     "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                    "lineNumber": 90,
+                                    "lineNumber": 88,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
@@ -1964,7 +1966,7 @@ ReactWrapper {
                                     "_debugOwner": [Circular],
                                     "_debugSource": Object {
                                       "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                      "lineNumber": 91,
+                                      "lineNumber": 89,
                                     },
                                     "actualDuration": 0,
                                     "actualStartTime": -1,
@@ -1999,7 +2001,7 @@ ReactWrapper {
                                       "_debugOwner": [Circular],
                                       "_debugSource": Object {
                                         "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                        "lineNumber": 92,
+                                        "lineNumber": 90,
                                       },
                                       "actualDuration": 0,
                                       "actualStartTime": -1,
@@ -2101,7 +2103,8 @@ ReactWrapper {
                         },
                         "stateNode": <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>,
@@ -2123,8 +2126,7 @@ ReactWrapper {
                         "children": Array [
                           <option
                             disabled={true}
-                            selected={true}
-                            value=""
+                            value="all"
                           >
                             all animals
                           </option>,
@@ -2165,6 +2167,7 @@ ReactWrapper {
                           </option>,
                         ],
                         "className": "grid-item",
+                        "defaultValue": "all",
                         "name": "animal",
                         "onChange": [Function],
                       },
@@ -2175,8 +2178,7 @@ ReactWrapper {
                         "children": Array [
                           <option
                             disabled={true}
-                            selected={true}
-                            value=""
+                            value="all"
                           >
                             all animals
                           </option>,
@@ -2217,6 +2219,7 @@ ReactWrapper {
                           </option>,
                         ],
                         "className": "grid-item",
+                        "defaultValue": "all",
                         "name": "animal",
                         "onChange": [Function],
                       },
@@ -2229,7 +2232,7 @@ ReactWrapper {
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
                           "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                          "lineNumber": 94,
+                          "lineNumber": 92,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -2240,7 +2243,7 @@ ReactWrapper {
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                            "lineNumber": 95,
+                            "lineNumber": 93,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -2258,7 +2261,6 @@ ReactWrapper {
                           "memoizedProps": Object {
                             "children": "choose an age..",
                             "disabled": true,
-                            "selected": true,
                           },
                           "memoizedState": null,
                           "mode": 0,
@@ -2266,7 +2268,6 @@ ReactWrapper {
                           "pendingProps": Object {
                             "children": "choose an age..",
                             "disabled": true,
-                            "selected": true,
                           },
                           "ref": null,
                           "return": [Circular],
@@ -2277,7 +2278,7 @@ ReactWrapper {
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                              "lineNumber": 96,
+                              "lineNumber": 94,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -2312,7 +2313,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 97,
+                                "lineNumber": 95,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -2347,7 +2348,7 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                  "lineNumber": 98,
+                                  "lineNumber": 96,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -2382,7 +2383,7 @@ ReactWrapper {
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
                                     "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                    "lineNumber": 99,
+                                    "lineNumber": 97,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
@@ -2475,7 +2476,6 @@ ReactWrapper {
                           "children": Array [
                             <option
                               disabled={true}
-                              selected={true}
                             >
                               choose an age..
                             </option>,
@@ -2511,7 +2511,6 @@ ReactWrapper {
                           "children": Array [
                             <option
                               disabled={true}
-                              selected={true}
                             >
                               choose an age..
                             </option>,
@@ -2549,7 +2548,7 @@ ReactWrapper {
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                            "lineNumber": 101,
+                            "lineNumber": 99,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -2560,7 +2559,7 @@ ReactWrapper {
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                              "lineNumber": 102,
+                              "lineNumber": 100,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -2595,7 +2594,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 103,
+                                "lineNumber": 101,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -2700,7 +2699,7 @@ ReactWrapper {
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                              "lineNumber": 105,
+                              "lineNumber": 103,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -2741,7 +2740,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 106,
+                                "lineNumber": 104,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -2853,7 +2852,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -2971,13 +2971,13 @@ ReactWrapper {
                 </p>,
                 <select
                   className="grid-item"
+                  defaultValue="all"
                   name="animal"
                   onChange={[Function]}
                 >
                   <option
                     disabled={true}
-                    selected={true}
-                    value=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -3024,7 +3024,6 @@ ReactWrapper {
                 >
                   <option
                     disabled={true}
-                    selected={true}
                   >
                     choose an age..
                   </option>
@@ -3108,13 +3107,13 @@ ReactWrapper {
                 </p>,
                 <select
                   className="grid-item"
+                  defaultValue="all"
                   name="animal"
                   onChange={[Function]}
                 >
                   <option
                     disabled={true}
-                    selected={true}
-                    value=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -3161,7 +3160,6 @@ ReactWrapper {
                 >
                   <option
                     disabled={true}
-                    selected={true}
                   >
                     choose an age..
                   </option>
@@ -3227,7 +3225,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                "lineNumber": 108,
+                "lineNumber": 106,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -4441,7 +4439,8 @@ ReactWrapper {
               >
                 <option
                   disabled=""
-                  value=""
+                  selected=""
+                  value="all"
                 >
                   all animals
                 </option>
@@ -4580,13 +4579,13 @@ ReactWrapper {
                 </p>
                 <select
                   className="grid-item"
+                  defaultValue="all"
                   name="animal"
                   onChange={[Function]}
                 >
                   <option
                     disabled={true}
-                    selected={true}
-                    value=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -4633,7 +4632,6 @@ ReactWrapper {
                 >
                   <option
                     disabled={true}
-                    selected={true}
                   >
                     choose an age..
                   </option>
@@ -4765,13 +4763,13 @@ ReactWrapper {
                 </p>
                 <select
                   className="grid-item"
+                  defaultValue="all"
                   name="animal"
                   onChange={[Function]}
                 >
                   <option
                     disabled={true}
-                    selected={true}
-                    value=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -4818,7 +4816,6 @@ ReactWrapper {
                 >
                   <option
                     disabled={true}
-                    selected={true}
                   >
                     choose an age..
                   </option>
@@ -4953,7 +4950,8 @@ ReactWrapper {
               >
                 <option
                   disabled=""
-                  value=""
+                  selected=""
+                  value="all"
                 >
                   all animals
                 </option>
@@ -5339,7 +5337,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -5702,7 +5701,8 @@ ReactWrapper {
                     >
                       <option
                         disabled=""
-                        value=""
+                        selected=""
+                        value="all"
                       >
                         all animals
                       </option>
@@ -6025,7 +6025,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -6388,7 +6389,8 @@ ReactWrapper {
                     >
                       <option
                         disabled=""
-                        value=""
+                        selected=""
+                        value="all"
                       >
                         all animals
                       </option>
@@ -6824,7 +6826,8 @@ ReactWrapper {
           >
             <option
               disabled=""
-              value=""
+              selected=""
+              value="all"
             >
               all animals
             </option>
@@ -6996,13 +6999,13 @@ ReactWrapper {
             </p>
             <select
               className="grid-item"
+              defaultValue="all"
               name="animal"
               onChange={[Function]}
             >
               <option
                 disabled={true}
-                selected={true}
-                value=""
+                value="all"
               >
                 all animals
               </option>
@@ -7049,7 +7052,6 @@ ReactWrapper {
             >
               <option
                 disabled={true}
-                selected={true}
               >
                 choose an age..
               </option>
@@ -7182,7 +7184,8 @@ ReactWrapper {
             >
               <option
                 disabled=""
-                value=""
+                selected=""
+                value="all"
               >
                 all animals
               </option>
@@ -7305,13 +7308,13 @@ ReactWrapper {
               </p>,
               <select
                 className="grid-item"
+                defaultValue="all"
                 name="animal"
                 onChange={[Function]}
               >
                 <option
                   disabled={true}
-                  selected={true}
-                  value=""
+                  value="all"
                 >
                   all animals
                 </option>
@@ -7358,7 +7361,6 @@ ReactWrapper {
               >
                 <option
                   disabled={true}
-                  selected={true}
                 >
                   choose an age..
                 </option>
@@ -7496,7 +7498,8 @@ ReactWrapper {
               >
                 <option
                   disabled=""
-                  value=""
+                  selected=""
+                  value="all"
                 >
                   all animals
                 </option>
@@ -7542,8 +7545,7 @@ ReactWrapper {
                 "children": Array [
                   <option
                     disabled={true}
-                    selected={true}
-                    value=""
+                    value="all"
                   >
                     all animals
                   </option>,
@@ -7584,6 +7586,7 @@ ReactWrapper {
                   </option>,
                 ],
                 "className": "grid-item",
+                "defaultValue": "all",
                 "name": "animal",
                 "onChange": [Function],
               },
@@ -7592,7 +7595,8 @@ ReactWrapper {
                 Object {
                   "instance": <option
                     disabled=""
-                    value=""
+                    selected=""
+                    value="all"
                   >
                     all animals
                   </option>,
@@ -7601,8 +7605,7 @@ ReactWrapper {
                   "props": Object {
                     "children": "all animals",
                     "disabled": true,
-                    "selected": true,
-                    "value": "",
+                    "value": "all",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -7776,7 +7779,6 @@ ReactWrapper {
                 "children": Array [
                   <option
                     disabled={true}
-                    selected={true}
                   >
                     choose an age..
                   </option>,
@@ -7818,7 +7820,6 @@ ReactWrapper {
                   "props": Object {
                     "children": "choose an age..",
                     "disabled": true,
-                    "selected": true,
                   },
                   "ref": null,
                   "rendered": Array [
@@ -8564,7 +8565,8 @@ ReactWrapper {
                         >
                           <option
                             disabled=""
-                            value=""
+                            selected=""
+                            value="all"
                           >
                             all animals
                           </option>
@@ -8927,7 +8929,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -9250,7 +9253,8 @@ ReactWrapper {
                         >
                           <option
                             disabled=""
-                            value=""
+                            selected=""
+                            value="all"
                           >
                             all animals
                           </option>
@@ -9613,7 +9617,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -9956,7 +9961,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                  "lineNumber": 79,
+                  "lineNumber": 78,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -9991,7 +9996,7 @@ ReactWrapper {
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
                     "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                    "lineNumber": 80,
+                    "lineNumber": 79,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
@@ -10026,7 +10031,7 @@ ReactWrapper {
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
                       "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                      "lineNumber": 81,
+                      "lineNumber": 80,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -10061,7 +10066,7 @@ ReactWrapper {
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
                         "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                        "lineNumber": 82,
+                        "lineNumber": 81,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -10096,7 +10101,7 @@ ReactWrapper {
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
                           "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                          "lineNumber": 84,
+                          "lineNumber": 82,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -10107,7 +10112,7 @@ ReactWrapper {
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                            "lineNumber": 85,
+                            "lineNumber": 83,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -10125,8 +10130,7 @@ ReactWrapper {
                           "memoizedProps": Object {
                             "children": "all animals",
                             "disabled": true,
-                            "selected": true,
-                            "value": "",
+                            "value": "all",
                           },
                           "memoizedState": null,
                           "mode": 0,
@@ -10134,8 +10138,7 @@ ReactWrapper {
                           "pendingProps": Object {
                             "children": "all animals",
                             "disabled": true,
-                            "selected": true,
-                            "value": "",
+                            "value": "all",
                           },
                           "ref": null,
                           "return": [Circular],
@@ -10146,7 +10149,7 @@ ReactWrapper {
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                              "lineNumber": 86,
+                              "lineNumber": 84,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -10181,7 +10184,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 87,
+                                "lineNumber": 85,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -10216,7 +10219,7 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                  "lineNumber": 88,
+                                  "lineNumber": 86,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -10251,7 +10254,7 @@ ReactWrapper {
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
                                     "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                    "lineNumber": 89,
+                                    "lineNumber": 87,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
@@ -10286,7 +10289,7 @@ ReactWrapper {
                                     "_debugOwner": [Circular],
                                     "_debugSource": Object {
                                       "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                      "lineNumber": 90,
+                                      "lineNumber": 88,
                                     },
                                     "actualDuration": 0,
                                     "actualStartTime": -1,
@@ -10321,7 +10324,7 @@ ReactWrapper {
                                       "_debugOwner": [Circular],
                                       "_debugSource": Object {
                                         "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                        "lineNumber": 91,
+                                        "lineNumber": 89,
                                       },
                                       "actualDuration": 0,
                                       "actualStartTime": -1,
@@ -10356,7 +10359,7 @@ ReactWrapper {
                                         "_debugOwner": [Circular],
                                         "_debugSource": Object {
                                           "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                          "lineNumber": 92,
+                                          "lineNumber": 90,
                                         },
                                         "actualDuration": 0,
                                         "actualStartTime": -1,
@@ -10458,7 +10461,8 @@ ReactWrapper {
                           },
                           "stateNode": <option
                             disabled=""
-                            value=""
+                            selected=""
+                            value="all"
                           >
                             all animals
                           </option>,
@@ -10480,8 +10484,7 @@ ReactWrapper {
                           "children": Array [
                             <option
                               disabled={true}
-                              selected={true}
-                              value=""
+                              value="all"
                             >
                               all animals
                             </option>,
@@ -10522,6 +10525,7 @@ ReactWrapper {
                             </option>,
                           ],
                           "className": "grid-item",
+                          "defaultValue": "all",
                           "name": "animal",
                           "onChange": [Function],
                         },
@@ -10532,8 +10536,7 @@ ReactWrapper {
                           "children": Array [
                             <option
                               disabled={true}
-                              selected={true}
-                              value=""
+                              value="all"
                             >
                               all animals
                             </option>,
@@ -10574,6 +10577,7 @@ ReactWrapper {
                             </option>,
                           ],
                           "className": "grid-item",
+                          "defaultValue": "all",
                           "name": "animal",
                           "onChange": [Function],
                         },
@@ -10586,7 +10590,7 @@ ReactWrapper {
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                            "lineNumber": 94,
+                            "lineNumber": 92,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -10597,7 +10601,7 @@ ReactWrapper {
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                              "lineNumber": 95,
+                              "lineNumber": 93,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -10615,7 +10619,6 @@ ReactWrapper {
                             "memoizedProps": Object {
                               "children": "choose an age..",
                               "disabled": true,
-                              "selected": true,
                             },
                             "memoizedState": null,
                             "mode": 0,
@@ -10623,7 +10626,6 @@ ReactWrapper {
                             "pendingProps": Object {
                               "children": "choose an age..",
                               "disabled": true,
-                              "selected": true,
                             },
                             "ref": null,
                             "return": [Circular],
@@ -10634,7 +10636,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 96,
+                                "lineNumber": 94,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -10669,7 +10671,7 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                  "lineNumber": 97,
+                                  "lineNumber": 95,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -10704,7 +10706,7 @@ ReactWrapper {
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
                                     "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                    "lineNumber": 98,
+                                    "lineNumber": 96,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
@@ -10739,7 +10741,7 @@ ReactWrapper {
                                     "_debugOwner": [Circular],
                                     "_debugSource": Object {
                                       "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                      "lineNumber": 99,
+                                      "lineNumber": 97,
                                     },
                                     "actualDuration": 0,
                                     "actualStartTime": -1,
@@ -10832,7 +10834,6 @@ ReactWrapper {
                             "children": Array [
                               <option
                                 disabled={true}
-                                selected={true}
                               >
                                 choose an age..
                               </option>,
@@ -10868,7 +10869,6 @@ ReactWrapper {
                             "children": Array [
                               <option
                                 disabled={true}
-                                selected={true}
                               >
                                 choose an age..
                               </option>,
@@ -10906,7 +10906,7 @@ ReactWrapper {
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                              "lineNumber": 101,
+                              "lineNumber": 99,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -10917,7 +10917,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 102,
+                                "lineNumber": 100,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -10952,7 +10952,7 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                  "lineNumber": 103,
+                                  "lineNumber": 101,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -11057,7 +11057,7 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                "lineNumber": 105,
+                                "lineNumber": 103,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -11098,7 +11098,7 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                                  "lineNumber": 106,
+                                  "lineNumber": 104,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -11210,7 +11210,8 @@ ReactWrapper {
                         >
                           <option
                             disabled=""
-                            value=""
+                            selected=""
+                            value="all"
                           >
                             all animals
                           </option>
@@ -11328,13 +11329,13 @@ ReactWrapper {
                   </p>,
                   <select
                     className="grid-item"
+                    defaultValue="all"
                     name="animal"
                     onChange={[Function]}
                   >
                     <option
                       disabled={true}
-                      selected={true}
-                      value=""
+                      value="all"
                     >
                       all animals
                     </option>
@@ -11381,7 +11382,6 @@ ReactWrapper {
                   >
                     <option
                       disabled={true}
-                      selected={true}
                     >
                       choose an age..
                     </option>
@@ -11465,13 +11465,13 @@ ReactWrapper {
                   </p>,
                   <select
                     className="grid-item"
+                    defaultValue="all"
                     name="animal"
                     onChange={[Function]}
                   >
                     <option
                       disabled={true}
-                      selected={true}
-                      value=""
+                      value="all"
                     >
                       all animals
                     </option>
@@ -11518,7 +11518,6 @@ ReactWrapper {
                   >
                     <option
                       disabled={true}
-                      selected={true}
                     >
                       choose an age..
                     </option>
@@ -11584,7 +11583,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/colevanacore/mod-3-projects/pet-finder/src/containers/petDisplay/petDisplay.js",
-                  "lineNumber": 108,
+                  "lineNumber": 106,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -12798,7 +12797,8 @@ ReactWrapper {
                 >
                   <option
                     disabled=""
-                    value=""
+                    selected=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -12937,13 +12937,13 @@ ReactWrapper {
                   </p>
                   <select
                     className="grid-item"
+                    defaultValue="all"
                     name="animal"
                     onChange={[Function]}
                   >
                     <option
                       disabled={true}
-                      selected={true}
-                      value=""
+                      value="all"
                     >
                       all animals
                     </option>
@@ -12990,7 +12990,6 @@ ReactWrapper {
                   >
                     <option
                       disabled={true}
-                      selected={true}
                     >
                       choose an age..
                     </option>
@@ -13122,13 +13121,13 @@ ReactWrapper {
                   </p>
                   <select
                     className="grid-item"
+                    defaultValue="all"
                     name="animal"
                     onChange={[Function]}
                   >
                     <option
                       disabled={true}
-                      selected={true}
-                      value=""
+                      value="all"
                     >
                       all animals
                     </option>
@@ -13175,7 +13174,6 @@ ReactWrapper {
                   >
                     <option
                       disabled={true}
-                      selected={true}
                     >
                       choose an age..
                     </option>
@@ -13310,7 +13308,8 @@ ReactWrapper {
                 >
                   <option
                     disabled=""
-                    value=""
+                    selected=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -13696,7 +13695,8 @@ ReactWrapper {
                         >
                           <option
                             disabled=""
-                            value=""
+                            selected=""
+                            value="all"
                           >
                             all animals
                           </option>
@@ -14059,7 +14059,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -14382,7 +14383,8 @@ ReactWrapper {
                         >
                           <option
                             disabled=""
-                            value=""
+                            selected=""
+                            value="all"
                           >
                             all animals
                           </option>
@@ -14745,7 +14747,8 @@ ReactWrapper {
                       >
                         <option
                           disabled=""
-                          value=""
+                          selected=""
+                          value="all"
                         >
                           all animals
                         </option>
@@ -15181,7 +15184,8 @@ ReactWrapper {
             >
               <option
                 disabled=""
-                value=""
+                selected=""
+                value="all"
               >
                 all animals
               </option>
@@ -15353,13 +15357,13 @@ ReactWrapper {
               </p>
               <select
                 className="grid-item"
+                defaultValue="all"
                 name="animal"
                 onChange={[Function]}
               >
                 <option
                   disabled={true}
-                  selected={true}
-                  value=""
+                  value="all"
                 >
                   all animals
                 </option>
@@ -15406,7 +15410,6 @@ ReactWrapper {
               >
                 <option
                   disabled={true}
-                  selected={true}
                 >
                   choose an age..
                 </option>
@@ -15539,7 +15542,8 @@ ReactWrapper {
               >
                 <option
                   disabled=""
-                  value=""
+                  selected=""
+                  value="all"
                 >
                   all animals
                 </option>
@@ -15662,13 +15666,13 @@ ReactWrapper {
                 </p>,
                 <select
                   className="grid-item"
+                  defaultValue="all"
                   name="animal"
                   onChange={[Function]}
                 >
                   <option
                     disabled={true}
-                    selected={true}
-                    value=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -15715,7 +15719,6 @@ ReactWrapper {
                 >
                   <option
                     disabled={true}
-                    selected={true}
                   >
                     choose an age..
                   </option>
@@ -15853,7 +15856,8 @@ ReactWrapper {
                 >
                   <option
                     disabled=""
-                    value=""
+                    selected=""
+                    value="all"
                   >
                     all animals
                   </option>
@@ -15899,8 +15903,7 @@ ReactWrapper {
                   "children": Array [
                     <option
                       disabled={true}
-                      selected={true}
-                      value=""
+                      value="all"
                     >
                       all animals
                     </option>,
@@ -15941,6 +15944,7 @@ ReactWrapper {
                     </option>,
                   ],
                   "className": "grid-item",
+                  "defaultValue": "all",
                   "name": "animal",
                   "onChange": [Function],
                 },
@@ -15949,7 +15953,8 @@ ReactWrapper {
                   Object {
                     "instance": <option
                       disabled=""
-                      value=""
+                      selected=""
+                      value="all"
                     >
                       all animals
                     </option>,
@@ -15958,8 +15963,7 @@ ReactWrapper {
                     "props": Object {
                       "children": "all animals",
                       "disabled": true,
-                      "selected": true,
-                      "value": "",
+                      "value": "all",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -16133,7 +16137,6 @@ ReactWrapper {
                   "children": Array [
                     <option
                       disabled={true}
-                      selected={true}
                     >
                       choose an age..
                     </option>,
@@ -16175,7 +16178,6 @@ ReactWrapper {
                     "props": Object {
                       "children": "choose an age..",
                       "disabled": true,
-                      "selected": true,
                     },
                     "ref": null,
                     "rendered": Array [
